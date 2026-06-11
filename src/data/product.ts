@@ -1,0 +1,80 @@
+import { type Product } from "../types/product";
+
+export const products: Product[] = [
+    {
+        id: "1",
+        title: "Minimalist Plant Stand",
+        description: "Elegant wooden stand perfect for showcasing your favorite plants",
+        price: 129.99,
+        image: "https://images.unsplash.com/photo-1578749556568-bc2c40e68b61?auto=format&fit=crop&w=900&q=80",
+        images: [
+            "https://images.unsplash.com/photo-1578749556568-bc2c40e68b61?auto=format&fit=crop&w=1200&q=80",
+            "https://images.unsplash.com/photo-1578749556568-bc2c40e68b61?auto=format&fit=crop&w=900&q=80",
+            "https://images.unsplash.com/photo-1578749556568-bc2c40e68b61?auto=format&fit=crop&w=600&q=80",
+        ],
+        features: ["Sustainable oak construction", "Compact modern silhouette", "Easy assembly"],
+        category: "Furniture",
+        slug: "minimalist-plant-stand",
+    },
+    {
+        id: "2",
+        title: "Natural Fiber Basket",
+        description: "Handwoven storage basket made from sustainable materials",
+        price: 89.99,
+        image: "https://images.unsplash.com/photo-1578749556568-bc2c40e68b61?auto=format&fit=crop&w=900&q=80",
+        images: [
+            "https://images.unsplash.com/photo-1578749556568-bc2c40e68b61?auto=format&fit=crop&w=1200&q=80",
+            "https://images.unsplash.com/photo-1578749556568-bc2c40e68b61?auto=format&fit=crop&w=900&q=80",
+        ],
+        features: ["Handwoven natural fibers", "Multipurpose storage", "Lightweight design"],
+        category: "Storage",
+        slug: "natural-fiber-basket",
+    },
+    {
+        id: "3",
+        title: "Ceramic Planter Set",
+        description: "Set of three modern ceramic planters in neutral tones",
+        price: 149.99,
+        image: "https://images.unsplash.com/photo-1481401908818-600b7a676c0d?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8ZGVjb3IlMjBjZXJhbWljfGVufDB8fDB8fHww",
+        images: [
+            "https://images.unsplash.com/photo-1481401908818-600b7a676c0d?w=1200&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8ZGVjb3IlMjBjZXJhbWljfGVufDB8fDB8fHww",
+            "https://images.unsplash.com/photo-1481401908818-600b7a676c0d?w=900&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8ZGVjb3IlMjBjZXJhbWljfGVufDB8fDB8fHww",
+            "https://images.unsplash.com/photo-1481401908818-600b7a676c0d?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8ZGVjb3IlMjBjZXJhbWljfGVufDB8fDB8fHww",
+        ],
+        features: ["Textured matte finish", "Set of three sizes", "Neutral modern palette"],
+        category: "Decor",
+        slug: "ceramic-planter-set",
+    },
+     {
+         id: "4",
+         title: "Wooden Shelving Unit",
+         description: "Modular shelving system for flexible storage solutions",
+         price: 299.99,
+         image: "https://images.unsplash.com/photo-1506439773649-6e0eb8cfb237?auto=format&fit=crop&w=900&q=80",
+         features: ["Modular shelf configuration", "Solid wood frame", "Easy to reposition"],
+         category: "Furniture",
+         slug: "wooden-shelving-unit",
+     },
+     {
+         id: "5",
+         title: "Linen Throw Pillow",
+         description: "Soft linen pillow with natural texture and neutral color",
+         price: 59.99,
+         image: "https://images.unsplash.com/photo-1584622181563-430f63602d4b?auto=format&fit=crop&w=900&q=80",
+         features: ["Soft linen blend", "Neutral earth tone", "Hand-stitched edges"],
+         category: "Textiles",
+         slug: "linen-throw-pillow",
+     },
+     {
+         id: "6",
+         title: "Glass Vase",
+         description: "Contemporary glass vase with minimalist design",
+         price: 79.99,
+         image: "https://images.unsplash.com/photo-1578500494198-246f612d03b3?auto=format&fit=crop&w=900&q=80",
+         features: ["Clear blown glass", "Minimal silhouette", "Ideal for fresh stems"],
+         category: "Decor",
+         slug: "glass-vase",
+     },
+];
+
+export const featuredProducts = products.slice(0, 3);
